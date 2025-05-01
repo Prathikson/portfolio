@@ -3,7 +3,11 @@
 @tailwind utilities;
 
 html {
-    scroll-behavior: smooth;
+    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  transition: background-color 0.5s ease, color 0.5s ease;
   }
 
   

@@ -44,7 +44,7 @@ export const HeroSection = () => {
  
   <HeroOrbit size={430} rotation={-14} shouldOrbit orbitDuration='30s'
   shouldSpin spinDuration='4s'>
-    <SparkleIcon className='size-8 text-white/20' />
+    <SparkleIcon className='size-8 text-white/20'/>
   </HeroOrbit>
 
   <HeroOrbit size={440} rotation={79} shouldOrbit orbitDuration='32s'

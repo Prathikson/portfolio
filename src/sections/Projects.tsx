@@ -8,6 +8,7 @@ import grainImage from '@/assets/images/grain.jpg';
 import { SectionHeader } from "@/components/SectionHeader";
 import { Card } from "@/components/Card";
 
+
 const portfolioProjects = [
 
   // My data for ther Projects 
@@ -51,8 +52,8 @@ const portfolioProjects = [
 
 export const ProjectsSection = () => {
   return(
-  <section id="project" className="pb-16 lg:py-24">
-    <div className="container">
+  <section id="projects" className="pb-16 lg:py-24" >
+    <div className="container" >
           <SectionHeader 
           eyebrow="Real-World Results"
           title="Featured Projects"
@@ -63,8 +64,8 @@ export const ProjectsSection = () => {
           {portfolioProjects.map((project, projectIndex) => (
             <Card key={project.title} className="px-8 pt-8 pb-0 md:pt-12 md:px-10 lg:pt-16 lg:px-20 sticky" 
             style={{
-              top: `calc(64px + ${projectIndex * 40}px`
-            }} >
+              top: `calc(64px + ${projectIndex * 40}px`,
+            }}>
 {/* Grid maker */}
             <div className="lg:grid lg:grid-cols-2 lg:gap-16">
 {/* Start Grid col 1 */}

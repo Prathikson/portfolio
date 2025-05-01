@@ -3,6 +3,7 @@ import { transform } from "next/dist/build/swc";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
+  darkMode: 'class',
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/sections/**/*.{js,ts,jsx,tsx,mdx}",
@@ -92,6 +93,11 @@ const config: Config = {
           text: '#EAEAEA',           // Soft White for text
         },
 
+      },
+
+
+      transitionProperty: {
+        theme: 'background-color, color, border-color, fill, stroke',
       },
     },
   },
